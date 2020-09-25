@@ -6,7 +6,7 @@ client = commands.Bot(command_prefix=".")
 
 @client.event
 async def on_ready():
-    # drinkMsg.start()
+    drinkMsg.start()
     print('Bot is online.')
 
 
@@ -21,4 +21,4 @@ if __name__ == '__main__':
             client.load_extension(f'cogs.{filename[:-3]}')
 
 
-client.run('')
+client.run('NzU4MzU0MTg3NjQ5MTU1MTAy.X2tuXw.OCNx5_RGpj4fTaTOjoD3KZl6eiw')
