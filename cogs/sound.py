@@ -23,7 +23,12 @@ class Sound(commands.Cog):
             else:
                 voice = await channel.connect()
 
-            voice.play(discord.FFmpegPCMAudio("song.mp3"), after=None)
+            # for HEROKU deploy
+             voice.play(discord.FFmpegPCMAudio("song.mp3"), after=None)
+
+            # for local debug
+            # voice.play(discord.FFmpegPCMAudio(
+            #     executable="", source="song.mp3"), after=None)
             voice.volume = 100
             voice.is_playing()
             while voice.is_playing():
