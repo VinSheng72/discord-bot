@@ -13,7 +13,7 @@ async def on_ready():
 @tasks.loop(hours=1)
 async def drinkMsg():
     channel = client.get_channel(694379147065163806)
-    await channel.send('Remember to drink water :cup_with_straw:')
+    await channel.send('Remember to drink water :cup_with_straw: !')
 
 if __name__ == '__main__':
     for filename in os.listdir('./cogs'):
