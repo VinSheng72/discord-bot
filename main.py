@@ -1,7 +1,10 @@
 import discord
 from discord.ext import commands, tasks
 import os
+from dotenv import load_dotenv
 client = commands.Bot(command_prefix=".")
+load_dotenv()
+TOKEN = os.getenv('TOKEN')
 
 
 @client.event
@@ -21,4 +24,4 @@ if __name__ == '__main__':
             client.load_extension(f'cogs.{filename[:-3]}')
 
 
-client.run('')
+client.run(TOKEN)
