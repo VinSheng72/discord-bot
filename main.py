@@ -1,10 +1,7 @@
 import discord
 from discord.ext import commands, tasks
 import os
-from dotenv import load_dotenv
-client = commands.Bot(command_prefix=".")
-load_dotenv()
-TOKEN = os.getenv('TOKEN')
+client = commands.Bot(command_prefix="-")
 
 
 @client.event
@@ -15,7 +12,11 @@ async def on_ready():
 
 @tasks.loop(hours=1)
 async def drinkMsg():
-    channel = client.get_channel(694379147065163806)
+    # Live
+    # channel = client.get_channel(694379147065163806)
+
+    # Test
+    channel = client.get_channel(758361628642246670)
     await channel.send('Remember to drink water :cup_with_straw: !')
 
 if __name__ == '__main__':
@@ -23,5 +24,8 @@ if __name__ == '__main__':
         if filename.endswith('.py'):
             client.load_extension(f'cogs.{filename[:-3]}')
 
+# Heroku LIVE
+#  client.run(os.environ['TOKEN'])
 
-client.run(os.environ['TOKEN'])
+# DEBUG
+client.run("YOURAPI")
