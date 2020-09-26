@@ -16,6 +16,12 @@ class Listener(commands.Cog):
         format = message.content.replace(" ", "").lower()
         if any(x in format for x in trigger):
             await message.channel.send("https://www.streamscheme.com/wp-content/uploads/2020/04/Cmonbruh.png.webp")
+        
+        if message.author.id == '258442650259161088': #Richie
+            msgReply = ('hue', 'pro', 'woW', 'noice', ':3', 'xd', 'uwu', 'im gay', ':poorU: :RichieNgaw:', 'geng')
+            await message.channel.send(random.message.choice(msgReply))            
+        elif message.author.id == '258420153912393728' and message.content.lower() in ('i', 'haha', 'hahaha', 'lol', 'xd', 'fuck', 'diu', 'niama', 'fk'):
+            await message.channel.send('HAHAHAHAHA LOL 👏😂')
 
     @commands.Cog.listener()
     async def on_message_delete(self, message):
