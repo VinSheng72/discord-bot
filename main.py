@@ -33,7 +33,7 @@ if __name__ == '__main__':
             client.load_extension(f'cogs.{filename[:-3]}')
 
 # Heroku LIVE
-#  client.run(os.environ['TOKEN'])
+client.run(os.environ['TOKEN'])
 
 # DEBUG
-client.run("NzU4OTAzMjc2NDQ2OTQxMTg0.X21twA.207fR9hkn_Q0eXhudnAMH4Bqi7s")
+# client.run("")
