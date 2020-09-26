@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands, tasks
 import os
-client = commands.Bot(command_prefix="-")
+client = commands.Bot(command_prefix=".")
 
 msgId = None
 
@@ -36,4 +36,4 @@ if __name__ == '__main__':
 client.run(os.environ['TOKEN'])
 
 # DEBUG
-# client.run("")
+# client.run("NzU4OTAzMjc2NDQ2OTQxMTg0.X21twA.nit4gXwPmHtqf3hw_2JaB3jA3Ng")
