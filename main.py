@@ -32,8 +32,5 @@ if __name__ == '__main__':
         if filename.endswith('.py'):
             client.load_extension(f'cogs.{filename[:-3]}')
 
-# Heroku LIVE
+# ADD TOKEN TO ENV VARIABLE
 client.run(os.environ['TOKEN'])
-
-# DEBUG
-# client.run("NzU4OTAzMjc2NDQ2OTQxMTg0.X21twA.nit4gXwPmHtqf3hw_2JaB3jA3Ng")
