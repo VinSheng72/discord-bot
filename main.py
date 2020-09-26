@@ -21,7 +21,9 @@ async def drinkMsg():
     # Test
     # channel = client.get_channel(758361628642246670)
     if msgId is not None:
+        # await client.http.delete_message(758361628642246670, msgId.id)
         await client.http.delete_message(694379147065163806, msgId.id)
+
     msgId = await channel.send('Remember to drink water :cup_with_straw: !')
 
 
