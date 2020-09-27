@@ -1,6 +1,8 @@
 import discord
-from discord.ext import commands, tasks
 import os
+from discord.ext import commands, tasks
+from globals import *
+
 client = commands.Bot(command_prefix=".")
 
 msgId = None
@@ -16,13 +18,12 @@ async def on_ready():
 async def drinkMsg():
     global msgId
     # Live
-    channel = client.get_channel(694379147065163806)
-
+    channel = client.get_channel(metal_channel)
     # Test
     # channel = client.get_channel(758361628642246670)
     if msgId is not None:
         # await client.http.delete_message(758361628642246670, msgId.id)
-        await client.http.delete_message(694379147065163806, msgId.id)
+        await client.http.delete_message(metal_channel, msgId.id)
 
     msgId = await channel.send('Remember to drink water :cup_with_straw: !')
 
