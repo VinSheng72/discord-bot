@@ -1,6 +1,6 @@
 {
 	"richie": {
-		"name": "258442650259161088",
+		"id": "258442650259161088",
 		"username": "@Richie.N#3580",
 		"respond": [
 			"howl",
@@ -16,7 +16,8 @@
 			":ketwoa:"
 		],
 		"reply": [
-			"sing yes",
+            "sing",
+            "yes",
 			"hue",
 			"pro",
 			"woW",
@@ -32,7 +33,7 @@
 		]
 	},
 	"beng": {
-		"name": "258420153912393728",
+		"id": "258420153912393728",
 		"username": "@Max Ng#6598",
 		"respond": [
 			"i",
@@ -48,15 +49,39 @@
 		"reply": ["HAHAHAHAHA LOL :clap::joy:"]
 	},
 	"vin": {
-		"name": "225461144536481793",
+		"id": "225461144536481793",
 		"username": "@hello#9825",
 		"respond": [],
 		"reply": []
 	},
 	"kwok": {
-		"name": "262222726209470464",
+		"id": "262222726209470464",
 		"username": "@WutFace#5778",
-		"respond": [],
-		"reply": []
+		"respond": ["good"],
+		"reply": [":wine_glass:"]
+	},
+	"kean": {
+		"id": "541587604613890052",
+		"username": "@ShadowMoon#5456",
+		"respond": ["lol"],
+		"reply": ["lol", ".help", ":fries:"]
+	},
+	"gui": {
+		"id": "242996025877331978",
+		"username": "@Kekyoin#4879",
+		"respond": [
+			"xd", 
+			"mom", 
+			"ur",
+			"x",
+			"d"
+		],
+		"reply": [
+			"stfu weeb",
+			"kys",
+			"gtfo",
+			"ni",
+			":middle_finger:"
+		]
 	}
 }

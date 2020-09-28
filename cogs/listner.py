@@ -14,17 +14,8 @@ class Listener(commands.Cog):
         format = message.content.replace(" ", "").lower()
         if any(x in format for x in trigger):
             await message.channel.send("https://www.streamscheme.com/wp-content/uploads/2020/04/Cmonbruh.png.webp")
-
-        # current user
-        user = str(message.author.id)
-        if user == user_info['richie']['name'] and message.content.lower() in user_info['richie']['respond']:
-            await message.channel.send(random.choice(user_info['richie']['reply']))
-        elif user == user_info['beng']['name'] and message.content.lower() in user_info['beng']['respond']:
-            await message.channel.send(user_info['beng']['reply'][0])
-        elif user in admins:
-            await message.add_reaction("😀")
-        elif message.content.strip().lower() == 'is richie gay':
-            await message.channel.send('Yes')
+        
+        await options(message)
 
     @commands.Cog.listener()
     async def on_message_delete(self, message):
@@ -34,3 +25,14 @@ class Listener(commands.Cog):
 
 def setup(client):
     client.add_cog(Listener(client))
+
+async def options(message):
+    if str(message.author.id) in admins:     
+        await message.add_reaction("😀")
+    elif message.content.strip().lower() == 'is richie gay':
+        await message.channel.send('Yes')
+    else:
+        #TODO checks if user id is in here, else skips to save performance
+        for user in user_info:
+            if str(message.author.id) == user_info[user]['id'] and message.content.lower() in user_info[user]['respond']:
+                await message.channel.send(random.choice(user_info[user]['reply']))
