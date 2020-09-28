@@ -1,10 +1,6 @@
-import discord
-import requests
 import random
 from discord.ext import commands
-from globals import *
-
-# 694379147065163806
+from globals import user_info, admins
 
 
 class Listener(commands.Cog):
@@ -18,16 +14,15 @@ class Listener(commands.Cog):
         format = message.content.replace(" ", "").lower()
         if any(x in format for x in trigger):
             await message.channel.send("https://www.streamscheme.com/wp-content/uploads/2020/04/Cmonbruh.png.webp")
-        
+
         # current user
         user = str(message.author.id)
-
-        if user == '258442650259161088' and message.content.lower() in richie_stuff['respond'] : #Richie
-            await message.channel.send(random.choice(richie_stuff['reply']))        
-        elif user == '258420153912393728' and message.content.lower() in ('i', 'haha', 'hahaha', 'lol', 'xd', 'fuck', 'diu', 'niama', 'fk'):
-            await message.channel.send('HAHAHAHAHA LOL 👏😂')
-        elif user in admins:                     
-            await message.author.react('759647085862584380') 
+        if user == user_info['richie']['name'] and message.content.lower() in user_info['richie']['respond']:
+            await message.channel.send(random.choice(user_info['richie']['reply']))
+        elif user == user_info['beng']['name'] and message.content.lower() in user_info['beng']['respond']:
+            await message.channel.send(user_info['beng']['reply'][0])
+        elif user in admins:
+            await message.add_reaction("😀")
         elif message.content.strip().lower() == 'is richie gay':
             await message.channel.send('Yes')
 
@@ -39,4 +34,3 @@ class Listener(commands.Cog):
 
 def setup(client):
     client.add_cog(Listener(client))
-
