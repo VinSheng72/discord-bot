@@ -1,6 +1,6 @@
 {
-	"richie": {
-		"id": "258442650259161088",
+	"258442650259161088": {
+		"name": "richie",
 		"username": "@Richie.N#3580",
 		"respond": [
 			"howl",
@@ -16,8 +16,8 @@
 			":ketwoa:"
 		],
 		"reply": [
-            "sing",
-            "yes",
+			"sing",
+			"yes",
 			"hue",
 			"pro",
 			"woW",
@@ -30,10 +30,11 @@
 			":point_right: @Richie.N#3580",
 			":poorU: :RichieNgaw:",
 			"geng"
-		]
+		],
+		"isAdmin": false
 	},
-	"beng": {
-		"id": "258420153912393728",
+	"258420153912393728": {
+		"name": "beng",
 		"username": "@Max Ng#6598",
 		"respond": [
 			"i",
@@ -46,42 +47,35 @@
 			"niama",
 			"fk"
 		],
-		"reply": ["HAHAHAHAHA LOL :clap::joy:"]
+		"reply": ["HAHAHAHAHA LOL :clap::joy:"],
+		"isAdmin": false
 	},
-	"vin": {
-		"id": "225461144536481793",
+	"225461144536481793": {
+		"name": "vin",
 		"username": "@hello#9825",
 		"respond": [],
-		"reply": []
+		"reply": [],
+		"isAdmin": true
 	},
-	"kwok": {
-		"id": "262222726209470464",
+	"262222726209470464": {
+		"name": "kwok",
 		"username": "@WutFace#5778",
 		"respond": ["good"],
-		"reply": [":wine_glass:"]
+		"reply": [":wine_glass:"],
+		"isAdmin": true
 	},
-	"kean": {
-		"id": "541587604613890052",
+	"541587604613890052": {
+		"id": "kean",
 		"username": "@ShadowMoon#5456",
 		"respond": ["lol"],
-		"reply": ["lol", ".help", ":fries:"]
+		"reply": ["lol", ".help", ":fries:"],
+		"isAdmin": false
 	},
-	"gui": {
-		"id": "242996025877331978",
+	"242996025877331978": {
+		"id": "gui",
 		"username": "@Kekyoin#4879",
-		"respond": [
-			"xd", 
-			"mom", 
-			"ur",
-			"x",
-			"d"
-		],
-		"reply": [
-			"stfu weeb",
-			"kys",
-			"gtfo",
-			"ni",
-			":middle_finger:"
-		]
+		"respond": ["xd", "mom", "ur", "x", "d"],
+		"reply": ["stfu weeb", "kys", "gtfo", "ni", ":middle_finger:"],
+		"isAdmin": false
 	}
 }

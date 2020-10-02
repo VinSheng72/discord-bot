@@ -1,6 +1,6 @@
 import random
 from discord.ext import commands
-from globals import user_info, admins
+from globals import user_info
 
 
 class Listener(commands.Cog):
@@ -10,11 +10,13 @@ class Listener(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message):
+        if message.author.bot:
+            return None
         trigger = ['nigger', 'nigga', 'nig', 'niga', "n*gger", "black"]
         format = message.content.replace(" ", "").lower()
         if any(x in format for x in trigger):
             await message.channel.send("https://www.streamscheme.com/wp-content/uploads/2020/04/Cmonbruh.png.webp")
-        
+
         await options(message)
 
     @commands.Cog.listener()
@@ -26,13 +28,17 @@ class Listener(commands.Cog):
 def setup(client):
     client.add_cog(Listener(client))
 
+
 async def options(message):
-    if str(message.author.id) in admins:     
-        await message.add_reaction("😀")
-    elif message.content.strip().lower() == 'is richie gay':
-        await message.channel.send('Yes')
-    else:
-        #TODO checks if user id is in here, else skips to save performance
-        for user in user_info:
-            if str(message.author.id) == user_info[user]['id'] and message.content.lower() in user_info[user]['respond']:
-                await message.channel.send(random.choice(user_info[user]['reply']))
+    id = str(message.author.id)
+    try:
+        if user_info[id]["isAdmin"]:
+            await message.add_reaction("😀")
+        elif message.content.strip().lower() == 'is richie gay':
+            await message.channel.send('Yes')
+        else:
+            if message.content.lower() in user_info[id]['respond']:
+                await message.channel.send(random.choice(user_info[id]['reply']))
+    except KeyError:
+        # print("No User info")
+        pass
