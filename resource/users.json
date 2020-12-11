@@ -11,9 +11,13 @@
 			"diu",
 			"fk",
 			":3",
-			":shockin:",
-			":frightening:",
-			":ketwoa:"
+			"?",
+			"tq",
+			"thx",
+			"sry",
+			"sorry",
+			"<:watchingyou:783966186320822282>",
+			"<:watchingyou2:783966985868410930>"
 		],
 		"reply": [
 			"sing",
@@ -26,10 +30,13 @@
 			"xd",
 			"uwu",
 			"im gay",
-			":OMEGALUL:",
+			"<:omegalul:365527475113033739>",
 			":point_right: @Richie.N#3580",
-			":poorU: :RichieNgaw:",
+			"<:pooru:752165238555541535> <:richiengaw:265013456216915968>",
 			"geng"
+		],
+		"reaction": [
+
 		],
 		"isAdmin": false
 	},
@@ -45,16 +52,28 @@
 			"fuck",
 			"diu",
 			"niama",
-			"fk"
+			"fk",
+			"<:watchingyou:783966186320822282>",
+			"<:watchingyou2:783966985868410930>"
 		],
-		"reply": ["HAHAHAHAHA LOL :clap::joy:"],
+		"reply": [
+			"HAHAHAHAHA LOL :clap::joy:",
+			"niama",
+			"k",
+			"lol",
+			"how lung",
+			"<:watchingyou:783966186320822282>",
+			"<:watchingyou2:783966985868410930>"
+		],
+		"reaction": [],
 		"isAdmin": false
 	},
 	"225461144536481793": {
 		"name": "vin",
 		"username": "@hello#9825",
 		"respond": [],
-		"reply": [],
+		"reply": [],		
+		"reaction": [],
 		"isAdmin": true
 	},
 	"262222726209470464": {
@@ -62,20 +81,56 @@
 		"username": "@WutFace#5778",
 		"respond": ["good"],
 		"reply": [":wine_glass:"],
+		"reaction": [],
 		"isAdmin": true
 	},
 	"541587604613890052": {
-		"id": "kean",
+		"name": "kean",
 		"username": "@ShadowMoon#5456",
-		"respond": ["lol"],
-		"reply": ["lol", ".help", ":fries:"],
+		"respond": [
+			"lol",
+			"fuck u",
+			"fuck you",
+			"fk u",
+			"diu",
+			"stfu",
+			"niama",
+			"lol"
+		],
+		"reply": [
+			"lol", 
+			".help", 
+			":fries:",
+			"diu",
+			"stfu",
+			"niama",
+			"lol"
+		],
+		"reaction": [],
 		"isAdmin": false
 	},
 	"242996025877331978": {
-		"id": "gui",
+		"name": "gui",
 		"username": "@Kekyoin#4879",
 		"respond": ["xd", "mom", "ur", "x", "d"],
 		"reply": ["stfu weeb", "kys", "gtfo", "ni", ":middle_finger:"],
+		"reaction": [],
+		"isAdmin": false
+	},
+	"370488404426883073": {
+		"name": "nsk",
+		"username": "@--_--#0146",
+		"respond": ["xd", "mom", "ur", "x", "d"],
+		"reply": ["stfu", "kys", "gtfo", "nigg", ":middle_finger:"],
+		"reaction": [],
+		"isAdmin": false
+	},
+	"483873871154511874": {
+		"name": "boon",
+		"username": "@Bread#2109",
+		"respond": ["diu"],
+		"reply": ["diu"],
+		"reaction": [],
 		"isAdmin": false
 	}
 }

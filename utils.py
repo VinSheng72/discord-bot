@@ -7,3 +7,7 @@ def read_json(path):
 def write_json(path, data):
     with open('./resource/' + path, encoding='utf8') as f:
         json.dump(data, f, ensure_ascii=True, indent=4)
+
+def write_txt(path, data):
+    with open('./resource/' + path, 'a+', encoding="utf-8") as f:
+        f.write(data + '\n')
