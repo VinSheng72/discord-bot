@@ -1,6 +1,6 @@
 import random
 from discord.ext import commands
-from globals import user_info
+from globals import user_info, version
 from utils import write_txt
 from datetime import datetime
 
@@ -24,9 +24,17 @@ class Listener(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message_delete(self, message):
-        if not message.author.bot:
+        id = str(message.author.id)
+        if not message.author.bot and not user_info[id]["isAdmin"]:
             await message.channel.send(f"{message.author}, did something suspicious")
 
+    @commands.command()
+    async def version(self, ctx):
+        await ctx.send("Current version is " + version)
+
+    @commands.command()
+    async def flip(self, ctx):
+        await ctx.send("Flipped " + random.choice(["Head", "Tail"]))
 
 def setup(client):
     client.add_cog(Listener(client))
@@ -44,7 +52,7 @@ async def options(message):
                 await message.channel.send(random.choice(user_info[id]['reply']))
 
         if( message.content.strip().lower() == 'laugh at him' and user_info[id]["isAdmin"]):
-            await message.channel.send('HAHAHAHAHAHA :point_right:' + user_info[258420153912393728]["username"])
+            await message.channel.send('HAHAHAHAHAHA :point_right:' + user_info[id]["username"])
 
     except KeyError:
         # print("No User info")
@@ -54,5 +62,5 @@ async def writelog(message):
     id = str(message.author.id)
 
     if user_info[id]['isAdmin'] :
-        msg = datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ' ' + user_info[id]['username'] + ' : ' + str(message.content.strip().lower())
+        msg = datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ' ' + user_info[id]['username'] + ' : ' + message.content.strip().lower() + '\t\t' + str(message.channel)
         write_txt('test_collect.txt', msg)
