@@ -1,4 +1,5 @@
 import json
+import random
 
 def read_json(path):
     with open('./resource/' + path, encoding='utf8') as f:
@@ -11,3 +12,6 @@ def write_json(path, data):
 def write_txt(path, data):
     with open('./resource/' + path, 'a+', encoding="utf-8") as f:
         f.write(data + '\n')
+
+def roll():
+    return random.uniform(0, 1)

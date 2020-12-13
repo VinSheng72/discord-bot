@@ -36,8 +36,10 @@
 			"geng"
 		],
 		"reaction": [
-
+			"<:richiengaw:265013456216915968>"
 		],
+		"luck" : 0.5,
+		"lastmsg" : "",
 		"isAdmin": false
 	},
 	"258420153912393728": {
@@ -65,7 +67,12 @@
 			"<:watchingyou:783966186320822282>",
 			"<:watchingyou2:783966985868410930>"
 		],
-		"reaction": [],
+		"reaction": [
+			"<:watchingyou:783966186320822282>",			
+			"<:watchingyou2:783966985868410930>"
+		],
+		"luck" : 0.1,
+		"lastmsg" : "",
 		"isAdmin": false
 	},
 	"225461144536481793": {
@@ -73,7 +80,9 @@
 		"username": "@hello#9825",
 		"respond": [],
 		"reply": [],		
-		"reaction": [],
+		"reaction": ["😀"],
+		"luck" : 0.5,
+		"lastmsg" : "",
 		"isAdmin": true
 	},
 	"262222726209470464": {
@@ -81,7 +90,9 @@
 		"username": "@WutFace#5778",
 		"respond": ["good"],
 		"reply": [":wine_glass:"],
-		"reaction": [],
+		"reaction": ["🍷"],
+		"luck" : 0.5,
+		"lastmsg" : "",
 		"isAdmin": true
 	},
 	"541587604613890052": {
@@ -107,6 +118,8 @@
 			"lol"
 		],
 		"reaction": [],
+		"luck" : 0.5,
+		"lastmsg" : "",
 		"isAdmin": false
 	},
 	"242996025877331978": {
@@ -115,6 +128,8 @@
 		"respond": ["xd", "mom", "ur", "x", "d"],
 		"reply": ["stfu weeb", "kys", "gtfo", "ni", ":middle_finger:"],
 		"reaction": [],
+		"luck" : 0.5,
+		"lastmsg" : "",
 		"isAdmin": false
 	},
 	"370488404426883073": {
@@ -123,6 +138,8 @@
 		"respond": ["xd", "mom", "ur", "x", "d"],
 		"reply": ["stfu", "kys", "gtfo", "nigg", ":middle_finger:"],
 		"reaction": [],
+		"luck" : 0.5,
+		"lastmsg" : "",
 		"isAdmin": false
 	},
 	"483873871154511874": {
@@ -131,6 +148,8 @@
 		"respond": ["diu"],
 		"reply": ["diu"],
 		"reaction": [],
+		"luck" : 0.5,
+		"lastmsg" : "",
 		"isAdmin": false
 	}
 }
