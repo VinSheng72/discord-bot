@@ -82,12 +82,12 @@ def setup(client):
 async def options(message):
     id = str(message.author.id)
     try:
-        if len(user_info[id]['reaction']) > 0 and random.uniform(0, 1) < user_info[id]['luck']:
+        if len(user_info[id]['reaction']) > 0 and random.uniform(0, 1) < 0.5:
             await message.add_reaction(random.choice(user_info[id]['reaction']))
-        # if message.content.strip().lower() == 'is richie gay':
-        #     await message.channel.send('Yes')
+        if message.content.strip().lower() == 'is richie gay':
+            await message.channel.send('Yes')
         else:
-            if any(x in message.content.lower().split() for x in user_info[id]['respond']):
+            if any(x in message.content.lower().split() for x in user_info[id]['respond']) and random.uniform(0, 1) < user_info[id]['luck']:
                 await message.channel.send(random.choice(user_info[id]['reply']))
 
     except KeyError:

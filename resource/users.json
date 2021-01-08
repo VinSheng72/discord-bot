@@ -48,7 +48,7 @@
 		"reaction": [
 			"<:richiengaw:265013456216915968>"
 		],
-		"luck" : 0.5,
+		"luck" : 0.9,
 		"lastmsg" : "",		
 		"isAdmin": false
 	},
@@ -81,7 +81,7 @@
 			"<:watchingyou:783966186320822282>",			
 			"<:watchingyou2:783966985868410930>"
 		],
-		"luck" : 0.1,
+		"luck" : 0.9,
 		"lastmsg" : "",				
 		"isAdmin": false
 	},
