@@ -59,8 +59,12 @@ class Listener(commands.Cog):
             await ctx.send('greet who?')
 
     @commands.command()
-    async def food(self, ctx, *args):
-        await ctx.send(f"Go eat {random.choice(args).replace(',','')}")
+    async def decide(self, ctx, *, args: str):
+        """
+            Ask bot to decide for you
+            Usage : .decide *hue, hue2, ...*
+        """
+        await ctx.send(f"Go eat {random.choice(args.split(','))}")
 
 
     # @commands.command()
