@@ -61,11 +61,13 @@ class Listener(commands.Cog):
     @commands.command()
     async def decide(self, ctx, *, args: str):
         """
-            Ask bot to decide for you
-            Usage : .decide *hue, hue2, ...*
+            Ask bot to decide for you, Eg .decide *hue, hue2, ...*
         """
-        await ctx.send(f"Go eat {random.choice(args.split(','))}")
+        await ctx.send(f":point_right: **{random.choice(args.split(','))}**")
 
+    @commands.command()
+    async def slot(self, ctx):
+        await ctx.send("".join(random.choices([':lemon:', ':tangerine:', ':cherries:', ':peach:', ':pear:', ':watermelon:', ':seven:'], k=3)))
 
     # @commands.command()
     # async def stop(self, ctx, service=''):
